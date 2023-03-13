@@ -1,0 +1,80 @@
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 28
+
+
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+androidExtensions {
+    experimental = true
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation Libs.junit
+    testImplementation Libs.assertk
+    androidTestImplementation Libs.espressoCore
+    androidTestImplementation Libs.androidTestCore
+    androidTestImplementation Libs.androidRunner
+    testImplementation Libs.mockito
+
+    implementation AndroidX.appcompat
+    implementation AndroidX.recyclerView
+    implementation AndroidX.design
+    implementation AndroidX.constraintLayout
+    implementation AndroidX.activty
+    implementation AndroidX.KTX
+    implementation AndroidX.room
+    implementation AndroidX.roomKtx
+    implementation AndroidX.fix_preference
+    kapt AndroidX.roomCompiler
+
+    implementation Libs.kotlin_stdlib
+    implementation Libs.kotlin_coroutines
+    implementation Libs.kotlin_coroutines_android
+    implementation Libs.kotlin_anko_commons
+
+    implementation Libs.dagger2
+    annotationProcessor Libs.dagger2_compiler
+    kapt Libs.dagger2_compiler
+    implementation Libs.dagger_android
+    implementation Libs.dagger_android_support
+    kapt Libs.dagger_android_processor
+
+    implementation Libs.kvs_schema
+    kapt Libs.kvs_schema_compiler
+
+    implementation project(':core')
+    implementation project(':ui')
+    implementation project(':languages')
+    implementation project(':libraries:floatingactionbutton')
+
+    implementation Libs.re2j
+    implementation Libs.okhttp
+}

@@ -1,0 +1,20 @@
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion Integer.parseInt(project.android_compile_sdk_version)
+    buildToolsVersion project.android_build_tools_version
+
+    defaultConfig {
+        minSdkVersion Integer.parseInt(project.android_min_sdk_version)
+        targetSdkVersion Integer.parseInt(project.android_target_sdk_version)
+    }
+}
+
+dependencies {
+    implementation Libs.kotlin_stdlib
+    implementation Libs.kotlin_coroutines
+    implementation Libs.kotlin_coroutines_android
+    implementation Libs.support_appcompat_v7
+}

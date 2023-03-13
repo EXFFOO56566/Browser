@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "944171436688",
+    "project_id": "tochy-browser-debug",
+    "storage_bucket": "tochy-browser-debug.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944171436688:android:9170fe29876398e79ca615",
+        "android_client_info": {
+          "package_name": "com.tochy.tochybrowser.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944171436688-5frda6l4vn40p18jvbrdva6gtpa2drq2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tochy.tochybrowser.debug",
+            "certificate_hash": "3c29d14240958c4f80fb79a7ded81547fb744100"
+          }
+        },
+        {
+          "client_id": "944171436688-ai5hjueqrpiik72u3llj0k8bon6f534g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC93f24xMP8MbrjpOBt7QjHTg_Ua5ipkfc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944171436688-ai5hjueqrpiik72u3llj0k8bon6f534g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

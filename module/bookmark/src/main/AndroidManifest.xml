@@ -1,0 +1,11 @@
+
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.tochy.bookmark">
+
+    <application>
+        <activity
+            android:name="com.tochy.tochybrowser.bookmark.overflow.view.BookmarkOverflowMenuActivity"
+            android:label="@string/pref_action_settings"/>
+    </application>
+</manifest>
